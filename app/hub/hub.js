@@ -9,6 +9,8 @@ angular.module('myApp.hub', ['ngRoute'])
     });
   }])
 
-  .controller('HubCtrl', [function() {
+  .controller('HubCtrl', ['$scope', spothub]);
 
-  }]);
+  function spothub($scope){
+      $scope.didit = 'winner'
+  }
